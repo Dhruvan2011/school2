@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=1aSTy3QPv_gtbKugSRedL9BrsbsMeN8R491OwQf_RpwzQsjCA-NACglkSvt9_xSdE0ajLHlNZH1ctxGkczAEp0amrH2avj18iaPOC30jQ64M6xg_sQdJFODgBYJP2Bx8lXs5XHEDvSOI6RB-rygfpOSUs33COWvEPa2P3fOzg1vZkv5DMt1hYYnbzhjEbKeky05URko_zJ0kvAjqmeN8BuTeJnjInc1bdIHueH_ZiwXFkTcRo7064nCUkbP_hCfsXvwlZ2SF633ZYOdptIvOVrKxwQUxnR6VvfoUn22mmGw6hpO4yQuo0aWAar5C1ApptQCn0dOqxS5puWoVhGFu8PwKNEQBi_DgANWs_RsslsakT5AA5ssDL9ftegljkdotS4JYdxYjYkBJ_W_nVK2XdF3_AK49xOh8OTb8h0m4HBcY9xQmg6r2YP2sbsWlWBFOU6nj2Uqyt67wvgPgBNbEopO7v6Kdm90wijccBY2pbKDl3xgnWbDZkto0WlKSIJc6jjgaZK_0P1eC3f5flE0enC7sB40ApqXbDVRL0lyb7rsz_cFHailzkGMTudxl94jhYsWi93ARrxudCo5hF0t1M7l-Gevgvgx8xRWNMJyPR9p4kcNtMQmAB7t-M-h0RHP5PueGXaD5k_QiArNBiQ8R_SaCbjSzBDG6DnHDI5yc7vQJcvLh-SlPlbyRsUKG5TM33sGb_XVpxlB3gAOPYqLMzZtGNsvkf7MxXJCWOsZ03MXRfK012jx3RdKx_otTZHisY8H1vaXLtmYzBwsZF4fsP5zVjRzyC-OVyeGVB0_t3Vb5-HwpSFPfPpXGHWlDrKenuhoOusvkI5PGSHPdcLwZi77EvKR6wceYwvS6rPByX7vKXngodTdFr1zxDAFWe6PVeGD29qfWd63rlE592PTtg76pOAuzAmOudxSpHOtb8fghMm1C3CKAcnwLUByuIxM4eKU4Ar6t_01P3pM1RA4iZeqOGe2-4Lromxw-0kFMpwdGqTSZllIcZcb8WZS4tWEn7ra04YQwBzbt20foXUi8FNc9oejd5aEwMZHxPtz0kPCUYvkoJELSg8PNTkKBeT5CSaThGqyv4QwkQMHX5phTpfFfRF8Zxp6MQdwcaqM5Ku_Fl0qHWNX42G_KcziJEFchAzs4BRQ4sstKA-hGJKLqlco-FHG7q3FGJ6prhJihNp3H_pp3h5A6oYwCnamoxCmuR2wqpiBOu6v7myF3Z4ITmw" nonce="de4cf7b5c21a49abf251a92156d04ea1" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9tYWlsLWF0dGFjaG1lbnQuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2F0dGFjaG1lbnQvdS8wLz91aT0yJmlrPTQ4NTg5ZDQ0ODcmYXR0aWQ9MC4xJnBlcm1tc2dpZD1tc2ctZjoxNzA0MTg0MTcwOTI4NTUyNjgzJnRoPTE3YTY3YTc5NmMwYTNhZWImdmlldz1hdHQmZGlzcD1zYWZlJnJlYWxhdHRpZD1mX2txbWU4bXRxMCZzYWRkYmF0PUFOR2pkSl9PbmVORHMweXl0RTdvekJSWlhjOTRRckdrVWJ3emRsSlVsUjhMVEFSNTVtM2ZRZUZCQ1FkUzVOQkd3SzZCelJESFdSejFiZklKbGxsS0c5THlEMm1xY0RLbzlDTEh2Q3paMlJCdk9adl9jSzhQSmRyVHhFcGZwMHlDUm9sdEE4LWRTOFA4MW9JejNNTUlwSU1MUDJ0QmJLek9Va1VMeDY1eXVqLVVNMjM5aE85QUZRRnRNRFh2djZ0WUM2ck1NemprMEZjY2UxUlROQzNNbldmMmxKQ2pKMWxiTGpmc05SOVZxdG85TVQxOVVpbVJvVHRIQVdldjNCRkJlMHc3RFBDN1pjUDVZb2VrMlFtR0ctdWtDY0ljWk9leUJSZ2UwRWVwVnc0cVM0WURiZFJJejNfdE9ZZTZJQVZoWnljU0lVUV9VTWx6eEZHNVFhM1lYMkxWUUZ5VHVpd3Z1Y2Q2X3A2ZDBzV1h0V1ZMbVRpU1FFV3dhRnRHQTIzQmo1YmNrX1VRaTE0a2syYktqeFhxUzJSanM1aFdyWXV4dTZpaWFfY3N2MXpWMVFCTlhvNkJNRWVFcnFpRmVmWnlBczhVdHhLUWMyZEhhMEswWDBSUzY5TUF4T3FScXp2SGFUb3RUR3hJREwtVnM0Yk5vS1ZlcEt1dVNweVUyUGtKcmlyVi1aeERTd0R0N25OVG5OZkI3WDFoQ2pHUXBjX3FvaEFjRUN0Zk56OUlHZ1drV0NQUjhEdURfRjlpblZsTU9KSC1MajBUWTNRdjVjVGk5dHk0THFfTHJ6ZzdHZGhIUmNMZmNBblFPTXM3NnRuOWwyUmI2VmdTUDlScnlXalhaN0toLU0wcDJLWXdxWnlwTDJtZEhpdGlGRklNdjRlVDYxOUhIaXRWMkFhSUl5SFVEQWtpN3lTOXVEWjhrcXc"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Perter Parker</a>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#campus life">Campus lLife</a></li>
+          <li><a href="#movies">Movies</a></li>
+      </ul>
+    </div>
+
+</nav>
+    
+  <!-- CODE FROM HERE */  -->
+    <!-- START -->
+    
+    
+<div class="container">
+	
+  <div class="page-header" id="campus life">
+  		<h2 class="text-capitalize">campus life</h2>
+    
+        <div class="row">
+  		<div  class="travel_mainDiv"> 
+  			<img class="img-responsive"  src="Teaching_5.jpg">
+
+  			<h4 class="text-capitalize"><kbd id="1">computer lab</kbd></h4>
+
+  			<h5 class="text-success text-left text-capitalize" >We learn computus</h5>
+
+  			<p class="text-muted text-left" >We learn computus in our computer lab.
+             And I love computus.</p>
+  		</div>
+    
+    <!-- STOP and repeat after class -->
+    <span>
+  		<div  class="travel_mainDiv"> 
+  			<img class="img-responsive"  src="Sports_2.jpg">
+
+  			<h4 class="text-capitalize"><kbd id="2">sports</kbd></h4>
+  			
+
+  			<h5 class="text-success text-left text-capitalize" >skates</h5>
+
+  			<p class="text-muted text-left" >I love to skate in my skating ground.</p>
+  		</div>
+        
+  		<div  class="travel_mainDiv"> 
+  			<img class="img-responsive"  src="Campus_1.jpg">
+
+  			<h4 class="text-capitalize"><kbd>libery</kbd></h4>
+            
+  			<h5 class="text-success text-left text-capitalize" >libery</h5>
+
+  			<p class="text-muted text-left" >It is best libery in my home</p>
+  		</div>
+              </div>
+              </div>
+        
+
+     <!-- CODE FROM HERE */  -->
+    <!-- START -->
+    
+	<div class="page-header" id="movies">
+  		<h2 class="text-capitalize">school achivements</h2>
+  </div>
+
+<div class="bg-primary movie_head" data-toggle="collapse" data-target="#avengers_endgame" >
+     Bhashyam in creativity<i class="fa fa-sort-desc" ></i>
+  </div>
+
+  <div id="avengers_endgame" class="collapse">
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+	  		<img src="Teaching_3.jpg" class="img-responsive img-thumbnail"> 
+	  </div>
+
+	  <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text" >
+		  <h5 class="text-success text-left text-capitalize">won the first prize in creativity skills 
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+      </h5>
+		  <p>They tell study and improve creativity skills.</p>
+	  </div>
+  
+  </div>
+
+</body>
+</html>
